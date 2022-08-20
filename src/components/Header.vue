@@ -33,11 +33,16 @@ export default {
 </script>
 
 <style scoped>
+.header {
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 40px 24px 40px;
+}
 .conteiner {
   display: flex;
 }
 .logo {
-  background-image: linear-gradient(45deg, #ff8177, #cf556c);
+  background-color: #fff;
   width: 90px;
   text-decoration: none;
   font-family: "Proxima Nova", sans-serif;
@@ -50,7 +55,7 @@ export default {
   font-variant: small-caps;
 }
 .input {
-  background: linear-gradient(45deg, #84fab0, #8fd3f4);
+  background-color: #fff;
   padding-left: 20px;
   padding-right: 10px;
   height: 30px;
@@ -80,7 +85,7 @@ export default {
   display: flex;
   padding-left: 26px;
   padding-right: 30px;
-  background: linear-gradient(45deg, #a6c0fe, #f68084);
+  background-color: #fff;
 }
 .number {
   font-family: "Proxima Nova", sans-serif;
@@ -106,7 +111,7 @@ export default {
   max-width: 130px;
 }
 .enter {
-  background: linear-gradient(45deg, #d4fc79, #96e6a1);
+  background-color: #fff;
   padding-inline: 10px;
   display: flex;
   line-height: 30px;
@@ -132,7 +137,7 @@ img:first-child {
   padding-right: 10px;
 }
 .ua {
-  background: linear-gradient(45deg, #43e97b, #38f9d7);
+  background-color: #fff;
   text-decoration: underline;
   font-family: "Fira Sans", sans-serif;
   font-style: normal;
@@ -142,14 +147,9 @@ img:first-child {
   color: #585858;
   align-self: flex-end;
 }
-.header {
-  width: 100%;
-  background-color: beige;
-  padding: 25px 40px 24px 40px;
-}
 @media screen and (max-width: 880px) {
   .telephon {
-    padding-left: 10px;
+    padding-left: 0px;
     padding-right: 10px;
   }
   .separete {
@@ -170,7 +170,12 @@ img:first-child {
     display: none;
   }
   .enter {
-    margin-right: 10px;
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .lens {
+    display: none;
   }
 }
 </style>
